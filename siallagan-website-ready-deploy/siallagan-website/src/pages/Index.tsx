@@ -97,7 +97,7 @@ export default function HomePage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video bg-gray-900">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/Qg2M04lzBrU"
+                src="https://drive.google.com/file/d/1clEM_Kyxz693Y5Sq_uxU6olK9ZMU191V/preview"
                 title="Video Profil Desa Siallagan Pindaraya"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
