@@ -6,7 +6,7 @@ const HERO = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07
 const ULOS_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4oezycajmq/ulos-weaving-craftsman.png";
 const CARVING_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4ofiicajnq/batak-wood-carving-statue.png";
 const TOURISM_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4ohvacajjq/village-tourism-experience.png";
-const TAS_RAJUT_IMG = "C:\Users\Asus\Downloads\tasrajut_fix.png"; 
+const TAS_RAJUT_IMG = ""C:\Users\Asus\Downloads\siallagan-website-ready-deploy\siallagan-website\public\tasrajut_fix.png""; 
 
 const UMKM_PRODUCTS = [
   {
