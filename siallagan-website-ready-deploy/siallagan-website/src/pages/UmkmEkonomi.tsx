@@ -48,7 +48,7 @@ const UMKM_PRODUCTS = [
     img: TAS_RAJUT_IMG,
     title: "Tas Rajut",
     desc: "Tas anyaman dari daun pandan yang ditenun secara manual oleh pengrajin desa. Kuat, tahan lama, dan ramah lingkungan.",
-    price: "Rp 150.000",
+    price: "Rp 130.000",
     tokopediaLink: "https://www.tokopedia.com/search?q=tas+rajut+batak",
   },
 ];
