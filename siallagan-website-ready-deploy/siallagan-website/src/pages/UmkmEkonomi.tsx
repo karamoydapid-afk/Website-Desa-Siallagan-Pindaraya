@@ -6,11 +6,12 @@ const HERO = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07
 const ULOS_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4oezycajmq/ulos-weaving-craftsman.png";
 const CARVING_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4ofiicajnq/batak-wood-carving-statue.png";
 const TOURISM_IMG = "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4ohvacajjq/village-tourism-experience.png";
+const TAS_RAJUT_IMG = "tasrajut_fix.png"; // Placeholder for Tas Rajut image
 
 const UMKM_PRODUCTS = [
   {
     img: ULOS_IMG,
-    title: "Kain Ulos Sadum",
+    title: "Kain Ulos",
     desc: "Kain tenun tradisional Batak dengan motif Sadum yang dibuat dengan teknik turun-temurun. Cocok untuk acara adat dan koleksi.",
     price: "Rp 350.000",
     tokopediaLink: "https://www.tokopedia.com/search?q=kain+ulos+batak",
@@ -44,11 +45,11 @@ const UMKM_PRODUCTS = [
     tokopediaLink: "https://www.tokopedia.com/search?q=miniatur+rumah+batak",
   },
   {
-    img: HERO,
-    title: "Tas Anyaman Pandan",
+    img: TAS_RAJUT_IMG,
+    title: "Tas Rajut",
     desc: "Tas anyaman dari daun pandan yang ditenun secara manual oleh pengrajin desa. Kuat, tahan lama, dan ramah lingkungan.",
     price: "Rp 150.000",
-    tokopediaLink: "https://www.tokopedia.com/search?q=tas+anyaman+pandan+batak",
+    tokopediaLink: "https://www.tokopedia.com/search?q=tas+rajut+batak",
   },
 ];
 
