@@ -38,6 +38,7 @@ const Navbar = () => {
         { name: "Struktur Pengelola Desa", path: "/tentang-kami/struktur-pengelola" },
         { name: "Nilai & Semangat Desa", path: "/tentang-kami/nilai-desa" },
         { name: "Potensi Desa", path: "/tentang-kami/potensi-desa" },
+        { name: "Peta Cerita", path: "/tentang-kami/peta-cerita" },
       ],
     },
     { name: "UMKM & Ekonomi", path: "/umkm-ekonomi" },
