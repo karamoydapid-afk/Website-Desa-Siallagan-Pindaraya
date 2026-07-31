@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { Users, Building2, Heart, Sprout, ChevronRight, ArrowRight } from "lucide-react";
+import { Users, Building2, Heart, Sprout, ChevronRight, ArrowRight, Map, ExternalLink } from "lucide-react";
 import AboutHero from "@/components/AboutHero";
 import CountUp from "@/components/CountUp";
 
@@ -40,7 +40,18 @@ const tabs = [
     icon: Sprout,
     img: "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4ocxycajjq/smart-farming-sensors-rice-field.png",
   },
+  {
+    id: "peta-cerita",
+    label: "Peta Cerita",
+    icon: Map,
+    img: "https://cdn.arcgis.com/sharing/rest/content/items/9b68d279ae584501aa9c731eb0ff6cb6/resources/jFAQhw0SQQAhJ81q7K74I.jpeg?w=800",
+  },
 ];
+
+const STORY_MAP_EMBED_URL =
+  "https://storymaps.arcgis.com/stories/9b68d279ae584501aa9c731eb0ff6cb6?embed";
+const STORY_MAP_URL =
+  "https://storymaps.arcgis.com/stories/9b68d279ae584501aa9c731eb0ff6cb6";
 
 function AboutSubNav({ activeTab, onNavigate }: { activeTab: string; onNavigate: (id: string) => void }) {
   const items = tabs.filter((t) => t.id !== activeTab);
@@ -420,6 +431,51 @@ function PotensiDesaContent() {
   );
 }
 
+function PetaCeritaContent() {
+  return (
+    <section className="bg-white py-16">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full bg-teal-50 text-teal-700 font-semibold text-sm mb-4">
+            <Map size={16} /> Peta Cerita Desa
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-teal-700 mb-4">
+            Jelajahi Desa Siallagan Pindaraya Lewat Peta Cerita
+          </h2>
+          <p className="text-gray-700 text-[15.5px] leading-relaxed max-w-3xl mx-auto">
+            Peta Cerita (Story Map) ini disusun oleh tim KKN-PPM UGM Toba
+            Nabasa 2026 untuk mengajak Anda menyusuri lokasi, budaya, dan daya
+            tarik wisata Desa Siallagan Pindaraya secara interaktif — lengkap
+            dengan peta, foto, dan narasi perjalanan.
+          </p>
+        </div>
+
+        <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+          <iframe
+            src={STORY_MAP_EMBED_URL}
+            title="Peta Cerita Desa Siallagan Pindaraya"
+            className="w-full"
+            style={{ height: "700px", border: "none" }}
+            allow="geolocation"
+            allowFullScreen
+          />
+        </div>
+
+        <div className="text-center mt-6">
+          <a
+            href={STORY_MAP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-teal-700 font-semibold text-sm hover:gap-3 transition-all"
+          >
+            Buka Peta Cerita di Tab Baru <ExternalLink size={16} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function TentangKami() {
   const { tab } = useParams();
   const activeTab = tab || "profil-desa";
@@ -435,6 +491,8 @@ export default function TentangKami() {
         return <NilaiDesaContent />;
       case "potensi-desa":
         return <PotensiDesaContent />;
+      case "peta-cerita":
+        return <PetaCeritaContent />;
       default:
         return <ProfilDesaContent />;
     }
