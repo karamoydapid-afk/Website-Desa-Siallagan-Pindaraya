@@ -93,14 +93,15 @@ function AboutSubNav({ activeTab, onNavigate }: { activeTab: string; onNavigate:
 
 // Struktur Pengelola Data
 const strukturPengelola = [
-  { jabatan: "Kepala Desa", nama: "Bapak Mangasi Siallagan", foto: "👤" },
-  { jabatan: "Sekretaris Desa", nama: "Bapak Parulian Siallagan", foto: "👤" },
-  { jabatan: "Kaur Keuangan", nama: "Ibu Tiurma Situmorang", foto: "👤" },
-  { jabatan: "Kaur Perencanaan", nama: "Bapak Jonner Siallagan", foto: "👤" },
-  { jabatan: "Kepala Dusun I", nama: "Bapak Romanus Siallagan", foto: "👤" },
-  { jabatan: "Kepala Dusun II", nama: "Bapak Tulus Siallagan", foto: "👤" },
-  { jabatan: "BPD (Ketua)", nama: "Bapak Binsar Siallagan", foto: "👤" },
-  { jabatan: "Karang Taruna (Ketua)", nama: "Saudara Marthin Siallagan", foto: "👤" },
+  { jabatan: "Kepala Desa", nama: "Sudung Sidabalok", foto: "👤" },
+  { jabatan: "Sekretaris Desa", nama: "Tumbur ST Siallagan", foto: "👤" },
+  { jabatan: "Kaur Keuangan", nama: "Dina E Siallagan", foto: "👤" },
+  { jabatan: "Kaur Umum dan Perencanaan", nama: "Ines DH Siallagan", foto: "👤" },
+  { jabatan: "Kasi Pemerintahan", nama: "Bachtiar Sianturi", foto: "👤" },
+  { jabatan: "Kasi Kesejahteraan", nama: "Hotma W Marpaung", foto: "👤" },
+  { jabatan: "Kepala Dusun I", nama: "Judiman Siallagan", foto: "👤" },
+  { jabatan: "Kepala Dusun II", nama: "Alken Silalahi", foto: "👤" },
+  { jabatan: "Kepala Dusun III", nama: "Mangatur", foto: "👤" },
 ];
 
 // Nilai Desa Data
@@ -186,19 +187,19 @@ function ProfilDesaContent() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-3xl font-bold text-teal-700 mb-1">
-                <CountUp end={500} suffix="+" />
+                <CountUp end={218} />
               </div>
               <div className="text-gray-600 text-sm">Kepala Keluarga</div>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-3xl font-bold text-teal-700 mb-1">
-                <CountUp end={2000} suffix="+" />
+                <CountUp end={826} />
               </div>
               <div className="text-gray-600 text-sm">Jiwa Penduduk</div>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
               <div className="text-3xl font-bold text-teal-700 mb-1">
-                <CountUp end={50} suffix="+" />
+                <CountUp end={68} />
               </div>
               <div className="text-gray-600 text-sm">Pelaku UMKM</div>
             </div>
