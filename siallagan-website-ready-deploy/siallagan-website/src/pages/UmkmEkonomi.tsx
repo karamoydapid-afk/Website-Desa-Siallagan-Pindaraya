@@ -50,36 +50,37 @@ const FEATURES = [
   },
 ];
 
-function ProductCard({ product }) {
+function ProductCard({ product, reversed }) {
   return (
-    <div className="bg-stone-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
-      <div className="h-56 overflow-hidden">
+    <div
+      className={`flex flex-col md:flex-row ${
+        reversed ? "md:flex-row-reverse" : ""
+      } bg-stone-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300`}
+    >
+      <div className="md:w-1/2 h-64 md:h-auto overflow-hidden">
         <img
           src={product.img}
           alt={product.title}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
         />
       </div>
-      <div className="p-6 flex flex-col flex-1">
-        <h3 className="font-bold text-xl text-gray-800 mb-2">{product.title}</h3>
-        <p className="text-gray-600 text-[14px] leading-relaxed mb-4 flex-1">
+      <div className="md:w-1/2 p-8 flex flex-col justify-center">
+        <h3 className="font-bold text-2xl text-gray-800 mb-3">{product.title}</h3>
+        <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
           {product.desc}
         </p>
-        <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-200">
-          <span className="text-xl font-bold text-teal-700">{product.price}</span>
-          <a
-            href={product.tokopediaLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:shadow-lg"
-          >
-            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M2 2h3.5l.5 2h13.5a1 1 0 0 1 .97 1.24l-2 8A1 1 0 0 1 17.5 14H7.5a1 1 0 0 1-.97-.76L4.22 4H2V2zm5.5 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-            </svg>
-            Beli di Tokopedia
-            <ExternalLink className="w-3 h-3" />
-          </a>
-        </div>
+        <a
+          href={product.tokopediaLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-lg text-sm font-semibold transition-all duration-200 hover:shadow-lg w-fit"
+        >
+          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M2 2h3.5l.5 2h13.5a1 1 0 0 1 .97 1.24l-2 8A1 1 0 0 1 17.5 14H7.5a1 1 0 0 1-.97-.76L4.22 4H2V2zm5.5 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+          </svg>
+          Beli di Tokopedia
+          <ExternalLink className="w-3.5 h-3.5" />
+        </a>
       </div>
     </div>
   );
@@ -263,9 +264,9 @@ function UmkmCategoryDetail({ category }) {
           <h3 className="text-2xl font-bold text-teal-700 mb-8">
             Produk {category.label}
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-8">
             {category.products.map((product, i) => (
-              <ProductCard key={i} product={product} />
+              <ProductCard key={i} product={product} reversed={i % 2 === 1} />
             ))}
           </div>
         </div>
