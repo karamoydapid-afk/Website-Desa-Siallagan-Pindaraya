@@ -62,15 +62,15 @@ export default function ProfilDesa() {
         <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-teal-700 mb-1">500+</div>
+              <div className="text-3xl font-bold text-teal-700 mb-1">218</div>
               <div className="text-gray-600 text-sm">Kepala Keluarga</div>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-teal-700 mb-1">2000+</div>
+              <div className="text-3xl font-bold text-teal-700 mb-1">826</div>
               <div className="text-gray-600 text-sm">Jiwa Penduduk</div>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <div className="text-3xl font-bold text-teal-700 mb-1">50+</div>
+              <div className="text-3xl font-bold text-teal-700 mb-1">68</div>
               <div className="text-gray-600 text-sm">Pelaku UMKM</div>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm">
