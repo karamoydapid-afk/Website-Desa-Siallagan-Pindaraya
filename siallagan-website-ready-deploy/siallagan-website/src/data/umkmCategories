@@ -1,0 +1,158 @@
+// Data kategori & produk UMKM Desa Siallagan Pindaraya
+// Gambar produk diambil dari folder /public (foto asli desa), kecuali kain ulos
+// yang masih memakai foto referensi karena belum ada foto asli dari desa.
+
+const ULOS_IMG =
+  "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4oezycajmq/ulos-weaving-craftsman.png";
+const CARVING_IMG =
+  "https://mgx-backend-cdn.metadl.com/generate/images/1458805/2026-07-23/ta4ofiicajnq/batak-wood-carving-statue.png";
+
+export const umkmCategories = [
+  {
+    id: "kain-ulos",
+    label: "Kain Ulos",
+    icon: "Layers",
+    cover: ULOS_IMG,
+    shortDesc:
+      "Kain tenun tradisional Batak dengan motif khas, ditenun dengan teknik turun-temurun untuk acara adat.",
+    longDesc:
+      "Kain Ulos adalah kain tenun sakral khas Batak yang dipakai dalam berbagai upacara adat seperti pernikahan, kelahiran, hingga kematian. Setiap motif dan warna memiliki makna filosofis tersendiri. Pengrajin di Desa Siallagan Pindaraya masih menenun ulos secara manual menggunakan alat tenun tradisional (gedogan), menjaga keaslian corak dan kualitas benang.",
+    products: [
+      {
+        title: "Ulos Ragi Hotang",
+        img: ULOS_IMG,
+        desc: "Ulos dengan motif Ragi Hotang yang melambangkan kebersamaan dan persatuan. Sering digunakan dalam upacara pernikahan Batak.",
+        price: "Rp 450.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=ulos+ragi+hotang",
+      },
+      {
+        title: "Ulos Sadum",
+        img: ULOS_IMG,
+        desc: "Kain tenun tradisional Batak dengan motif Sadum penuh warna, dibuat dengan teknik turun-temurun. Cocok untuk acara adat maupun koleksi.",
+        price: "Rp 350.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=kain+ulos+sadum",
+      },
+    ],
+  },
+  {
+    id: "alat-musik-tradisional",
+    label: "Alat Musik Tradisional",
+    icon: "Music",
+    cover: "/hasapi_fix.png",
+    shortDesc:
+      "Alat musik khas Batak buatan tangan pengrajin desa, mulai dari hasapi hingga gendang.",
+    longDesc:
+      "Musik menjadi bagian penting dari upacara adat dan kesenian Batak. Pengrajin Desa Siallagan Pindaraya membuat alat musik tradisional secara manual dari kayu dan kulit pilihan, mulai dari hasapi (kecapi Batak) hingga gendang yang biasa dimainkan dalam pertunjukan tortor dan gondang.",
+    products: [
+      {
+        title: "Hasapi Batak",
+        img: "/hasapi_fix.png",
+        desc: "Alat musik petik khas Batak yang menyerupai kecapi, dibuat dari kayu pilihan dengan ukiran khas dan senar yang menghasilkan nada khas gondang Batak.",
+        price: "Rp 400.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=hasapi+batak",
+      },
+      {
+        title: "Gendang Batak",
+        img: "/gendang_fix.png",
+        desc: "Gendang tradisional Batak yang dipakai dalam pertunjukan gondang dan tortor, dibuat dari kayu dan kulit hewan dengan proses tradisional.",
+        price: "Rp 550.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=gendang+batak+tradisional",
+      },
+    ],
+  },
+  {
+    id: "pakaian",
+    label: "Pakaian",
+    icon: "Shirt",
+    cover: "/kaos_fix.png",
+    shortDesc:
+      "Pakaian bernuansa budaya Batak dan Danau Toba, dari kaos kasual hingga stelan bermotif ulos.",
+    longDesc:
+      "Selain kain ulos tradisional, warga desa juga mengembangkan produk sandang modern bernuansa budaya Batak — mulai dari kaos bertema Danau Toba hingga stelan pakaian dengan sentuhan motif ulos. Cocok dipakai sehari-hari maupun sebagai oleh-oleh khas dari Desa Siallagan Pindaraya.",
+    products: [
+      {
+        title: "Kaos Khas Samosir",
+        img: "/kaos_fix.png",
+        desc: "Kaos katun dengan desain khas Danau Toba dan Pulau Samosir, nyaman dipakai sehari-hari dan cocok sebagai oleh-oleh.",
+        price: "Rp 95.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=kaos+samosir+danau+toba",
+      },
+      {
+        title: "Stelan Wanita Motif Batak",
+        img: "/stelanwanita_fix.png",
+        desc: "Stelan pakaian wanita dengan sentuhan motif dan warna khas Batak, dijahit oleh penjahit lokal desa.",
+        price: "Rp 275.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=stelan+wanita+motif+batak",
+      },
+    ],
+  },
+  {
+    id: "kerajinan-tangan",
+    label: "Kerajinan Tangan",
+    icon: "Hammer",
+    cover: "/tasrajut_fix.png",
+    shortDesc:
+      "Karya tangan pengrajin desa, dari tas rajut, kalender kayu ukir, hingga pahatan patung Batak.",
+    longDesc:
+      "Kerajinan tangan menjadi salah satu sumber ekonomi utama warga Desa Siallagan Pindaraya. Dikerjakan dengan ketelitian tinggi dari bahan baku lokal seperti kayu dan serat alam, setiap produk kerajinan membawa sentuhan khas budaya Batak yang unik dan bernilai jual tinggi.",
+    products: [
+      {
+        title: "Tas Rajut",
+        img: "/tasrajut_fix.png",
+        desc: "Tas rajut buatan tangan pengrajin desa dengan bahan berkualitas, kuat, tahan lama, dan cocok untuk aktivitas sehari-hari.",
+        price: "Rp 150.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=tas+rajut+batak",
+      },
+      {
+        title: "Kalender Kayu Ukir",
+        img: "/kalenderkayu_fix.png",
+        desc: "Kalender hias dari kayu dengan ukiran khas Batak, cocok sebagai dekorasi rumah maupun suvenir bernilai budaya.",
+        price: "Rp 85.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=kalender+kayu+ukir+batak",
+      },
+      {
+        title: "Pahatan Patung Batak",
+        img: CARVING_IMG,
+        desc: "Kerajinan pahatan kayu khas Batak yang menggambarkan figur-figur adat dan simbol budaya dengan detail yang sangat halus.",
+        price: "Rp 500.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=patung+batak+kayu",
+      },
+      {
+        title: "Miniatur Rumah Bolon",
+        img: CARVING_IMG,
+        desc: "Replika miniatur rumah adat Batak (Rumah Bolon) dari kayu pilihan dengan detail arsitektur yang akurat.",
+        price: "Rp 250.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=miniatur+rumah+bolon",
+      },
+    ],
+  },
+  {
+    id: "souvenir",
+    label: "Souvenir",
+    icon: "Gift",
+    cover: "/souvenir_fix.png",
+    shortDesc:
+      "Suvenir khas Danau Toba yang ringkas dan mudah dibawa pulang, cocok untuk buah tangan wisatawan.",
+    longDesc:
+      "Bagi wisatawan yang ingin membawa pulang kenang-kenangan, warga desa menyediakan berbagai suvenir khas berukuran kecil dan ringkas — mulai dari gantungan kunci berukir hingga aksesori bertema Danau Toba, cocok dijadikan buah tangan setelah berkunjung ke Desa Siallagan Pindaraya.",
+    products: [
+      {
+        title: "Gantungan Kunci Ukir Kayu",
+        img: "/souvenir_fix.png",
+        desc: "Gantungan kunci berbahan kayu dengan ukiran khas Batak, ringan dan praktis dibawa sebagai oleh-oleh.",
+        price: "Rp 25.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=gantungan+kunci+ukir+batak",
+      },
+      {
+        title: "Suvenir Mini Danau Toba",
+        img: "/souvenir_fix.png",
+        desc: "Aneka suvenir kecil bertema Danau Toba dan Pulau Samosir, cocok dikoleksi maupun dibagikan sebagai buah tangan.",
+        price: "Rp 30.000",
+        tokopediaLink: "https://www.tokopedia.com/search?q=souvenir+danau+toba",
+      },
+    ],
+  },
+];
+
+export const getCategoryById = (id) =>
+  umkmCategories.find((c) => c.id === id);
