@@ -24,6 +24,7 @@ const AppRoutes = () => (
     <Route path="/tentang-kami" element={<PageLayout><TentangKami /></PageLayout>} />
     <Route path="/tentang-kami/:tab" element={<PageLayout><TentangKami /></PageLayout>} />
     <Route path="/umkm-ekonomi" element={<PageLayout><UmkmEkonomi /></PageLayout>} />
+    <Route path="/umkm-ekonomi/:category" element={<PageLayout><UmkmEkonomi /></PageLayout>} />
     <Route path="/wisata-budaya" element={<PageLayout><WisataBudaya /></PageLayout>} />
     <Route path="/artikel" element={<PageLayout><Artikel /></PageLayout>} />
     <Route path="/artikel/:slug" element={<PageLayout><ArtikelDetail /></PageLayout>} />
